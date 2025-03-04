@@ -15,7 +15,7 @@ const meetingFixture = {
     meeting_official_name: "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023",
 }
 
-describe("parse products schema", () => {
+describe("parse meeting schema", () => {
     const meeting = {
         ...meetingFixture,
         year: 2023,
