@@ -1,5 +1,4 @@
 import { meetingSchema } from "./meeting"
-import { describe, expect, it } from "vitest"
 
 const meetingFixture = {
     circuit_key: 61,

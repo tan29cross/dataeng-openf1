@@ -1,5 +1,4 @@
 import { sessionSchema } from "./session"
-import { describe, expect, it } from "vitest"
 
 const sessionFixture = {
     circuit_key: 7,
