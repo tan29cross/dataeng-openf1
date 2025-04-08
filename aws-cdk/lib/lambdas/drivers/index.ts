@@ -17,8 +17,6 @@ export const handler: SQSHandler = async (event: SQSEvent, context: Context) => 
   
 
    // Write data to S3
-  // const bucketKey = `drivers/session-${meetingKey}-${formattedDate}.json`
-  // await writeToS3(env.BUCKET_NAME, bucketKey, JSON.stringify(sessions))
   const sessions = Object.keys(driversData)
   await Promise.all(
     sessions.map(async (session) => {
@@ -28,6 +26,8 @@ export const handler: SQSHandler = async (event: SQSEvent, context: Context) => 
     })
     
   )
+
+  // Send message to SQS
 
   
 }
