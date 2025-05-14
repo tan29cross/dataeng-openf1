@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 export const envSchema = z.object({
     BUCKET_NAME: z.string(),
-    QUEUE_URL: z.string(),
+    TOPIC_ARN: z.string(),
     URL: z.string(),
 })
 
